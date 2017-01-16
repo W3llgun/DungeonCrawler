@@ -148,7 +148,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ef1748c1853f6040881a2673af807b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxLife: 3
+  lifeBars:
+  - {fileID: 21300000, guid: 381021b9c672c0740845d8a2fd09684c, type: 3}
+  - {fileID: 21300000, guid: 8aec4578ceb5af44ebc7e357cbf11187, type: 3}
+  - {fileID: 21300000, guid: 5d1352bf53c0cf74bad362697c5328aa, type: 3}
+  - {fileID: 21300000, guid: 551f9ab00c8b7fc4ca716c21b49b09d1, type: 3}
+  - {fileID: 21300000, guid: 55fe778a2f88ab3429144f6014944a98, type: 3}
+  - {fileID: 21300000, guid: 1817bcabf309d3c43ba573254176c629, type: 3}
+  - {fileID: 21300000, guid: 2a0e8ae0950e37b4baa72ce8fe9a6580, type: 3}
+  maxLife: 6
   maxSpeed: 150000
   speed: 50000
   damage: 1

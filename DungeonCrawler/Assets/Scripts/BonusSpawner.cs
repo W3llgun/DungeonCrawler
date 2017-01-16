@@ -26,6 +26,7 @@ public class BonusSpawner : MonoBehaviour {
         {
             int rand = Random.Range(0, items.Count);
             GameObject go = Instantiate(items[rand]);
+			go.transform.position = position;
             var item = go.GetComponent<Item>();
             switch (item.action.type)
             {

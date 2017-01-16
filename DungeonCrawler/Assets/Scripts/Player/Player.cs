@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System;
+using UnityEngine.UI;
+using System.Collections.Generic;
 
 [RequireComponent(typeof(Rigidbody2D), typeof(BoxCollider2D))]
 public class Player : MonoBehaviour {
@@ -22,6 +24,12 @@ public class Player : MonoBehaviour {
         }
     }
 
+    [SerializeField]
+    List<Sprite> lifeBars;
+
+    Text scoreText;
+    Image lifeImage;
+
     Rigidbody2D rigid;
     BoxCollider2D coll;
     int life;
@@ -29,14 +37,17 @@ public class Player : MonoBehaviour {
     {
         get
         {
-            return life / 4;
+            return life;
         }
         set
         {
-            life = value * 4;
+            life = value;
         }
     }
     public int maxLife = 3;
+
+    int score;
+
     public int maxSpeed = 15;
     public int speed = 5;
 
@@ -52,11 +63,23 @@ public class Player : MonoBehaviour {
 
     void Start ()
     {
-        coll = GetComponent<BoxCollider2D>();
+        scoreText = GameObject.Find("Score").GetComponent<Text>();
+		lifeImage = GameObject.Find("Life").GetComponent<Image>();
+		coll = GetComponent<BoxCollider2D>();
         rigid = GetComponent<Rigidbody2D>();
         Life = maxLife;
+		Debug.Log(888);
 	}
-	
+
+	private void OnLevelWasLoaded(int level)
+	{
+		scoreText = GameObject.Find("Score").GetComponent<Text>();
+		scoreText.text = "Score : " + score;
+
+		lifeImage = GameObject.Find("Life").GetComponent<Image>();
+		lifeImage.sprite = lifeBars[life];
+	}
+
 	void FixedUpdate ()
     {
 	    if (Input.GetKey(move.up))
@@ -117,8 +140,10 @@ public class Player : MonoBehaviour {
 
     public void Hit(int damage)
     {
-        Life = Life - damage;
-		if(Life <= 0)
+		if(lifeImage == null) lifeImage = GameObject.Find("Life").GetComponent<Image>();
+		Life = Life - damage;
+		lifeImage.sprite = lifeBars[life];
+		if (Life <= 0)
 		{
 			MenuManager.instance.setEnd("Game Over");
 		}
@@ -131,11 +156,15 @@ public class Player : MonoBehaviour {
             Pickup collect = collision.gameObject.GetComponent<Item>().Collect();
             if (collect.type == ItemType.LIFE)
             {
-                Life = Life + collect.value;
+                Life = Life + (collect.value/2);
+				Life = Mathf.Min(Life, maxLife);
+                lifeImage.sprite = lifeBars[life];
             }
             else if(collect.type == ItemType.SCORE)
             {
-                 //AddScore
+				if (scoreText == null) scoreText = GameObject.Find("Score").GetComponent<Text>();
+				score += collect.value;
+                scoreText.text = "Score : " + score;
             }
         }
     }
