@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Room : MonoBehaviour {
-
+	public List<Door> doors;
 	public List<Enemy> enemysInRoom;
 	public bool isPlayerIn = false;
 
 	void Awake () {
 		enemysInRoom = new List<Enemy>();
+		doors = new List<Door>(GetComponentsInChildren<Door>());
 	}
 
 	private void OnTriggerEnter2D(Collider2D collision)
@@ -57,6 +58,6 @@ public class Room : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		
+		//if(isPlayerIn && )
 	}
 }

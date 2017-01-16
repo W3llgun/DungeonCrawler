@@ -1,0 +1,451 @@
+fileFormatVersion: 2
+guid: 841caf9474779a648b873182fa0eb78a
+timeCreated: 1484563638
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: The Binding of Isaac Rebirth - Isaac_0
+    21300002: The Binding of Isaac Rebirth - Isaac_1
+    21300004: The Binding of Isaac Rebirth - Isaac_2
+    21300006: The Binding of Isaac Rebirth - Isaac_3
+    21300008: The Binding of Isaac Rebirth - Isaac_4
+    21300010: The Binding of Isaac Rebirth - Isaac_5
+    21300012: The Binding of Isaac Rebirth - Isaac_6
+    21300014: The Binding of Isaac Rebirth - Isaac_7
+    21300016: The Binding of Isaac Rebirth - Isaac_8
+    21300018: The Binding of Isaac Rebirth - Isaac_9
+    21300020: The Binding of Isaac Rebirth - Isaac_10
+    21300022: The Binding of Isaac Rebirth - Isaac_11
+    21300024: The Binding of Isaac Rebirth - Isaac_12
+    21300026: The Binding of Isaac Rebirth - Isaac_13
+    21300028: The Binding of Isaac Rebirth - Isaac_14
+    21300030: The Binding of Isaac Rebirth - Isaac_15
+    21300032: The Binding of Isaac Rebirth - Isaac_16
+    21300034: The Binding of Isaac Rebirth - Isaac_17
+    21300036: The Binding of Isaac Rebirth - Isaac_18
+    21300038: The Binding of Isaac Rebirth - Isaac_19
+    21300040: The Binding of Isaac Rebirth - Isaac_20
+    21300042: The Binding of Isaac Rebirth - Isaac_21
+    21300044: The Binding of Isaac Rebirth - Isaac_22
+    21300046: The Binding of Isaac Rebirth - Isaac_23
+    21300048: The Binding of Isaac Rebirth - Isaac_24
+    21300050: The Binding of Isaac Rebirth - Isaac_25
+    21300052: The Binding of Isaac Rebirth - Isaac_26
+    21300054: The Binding of Isaac Rebirth - Isaac_27
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: The Binding of Isaac Rebirth - Isaac_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 86
+        width: 28
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: The Binding of Isaac Rebirth - Isaac_1
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 85
+        width: 28
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: The Binding of Isaac Rebirth - Isaac_2
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 86
+        width: 28
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: The Binding of Isaac Rebirth - Isaac_3
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 85
+        width: 28
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: The Binding of Isaac Rebirth - Isaac_4
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 86
+        width: 28
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: The Binding of Isaac Rebirth - Isaac_5
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 85
+        width: 28
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: The Binding of Isaac Rebirth - Isaac_6
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 86
+        width: 28
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: The Binding of Isaac Rebirth - Isaac_7
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 85
+        width: 28
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: The Binding of Isaac Rebirth - Isaac_8
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 43
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: The Binding of Isaac Rebirth - Isaac_9
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 43
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: The Binding of Isaac Rebirth - Isaac_10
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 43
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: The Binding of Isaac Rebirth - Isaac_11
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 41
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: The Binding of Isaac Rebirth - Isaac_12
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 42
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: The Binding of Isaac Rebirth - Isaac_13
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 43
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: The Binding of Isaac Rebirth - Isaac_14
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 43
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: The Binding of Isaac Rebirth - Isaac_15
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 43
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: The Binding of Isaac Rebirth - Isaac_16
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 41
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: The Binding of Isaac Rebirth - Isaac_17
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 42
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: The Binding of Isaac Rebirth - Isaac_18
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 0
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: The Binding of Isaac Rebirth - Isaac_19
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 0
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: The Binding of Isaac Rebirth - Isaac_20
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 0
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: The Binding of Isaac Rebirth - Isaac_21
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 0
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: The Binding of Isaac Rebirth - Isaac_22
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 0
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: The Binding of Isaac Rebirth - Isaac_23
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 0
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: The Binding of Isaac Rebirth - Isaac_24
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 0
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: The Binding of Isaac Rebirth - Isaac_25
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 0
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: The Binding of Isaac Rebirth - Isaac_26
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 0
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: The Binding of Isaac Rebirth - Isaac_27
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 0
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
