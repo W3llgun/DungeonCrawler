@@ -12,12 +12,21 @@ public class Door : MonoBehaviour {
 		{
 			if(reloadCount < 5)
 			{
+				Transform pTrsm = collision.collider.transform;
+				if (pTrsm.position.x > 5 || pTrsm.position.x < -5)
+				{
+					pTrsm.position = new Vector3(pTrsm.position.x * -1, pTrsm.position.y, 0);
+				}
+				else
+				{
+					pTrsm.position = new Vector3(pTrsm.position.x, pTrsm.position.y * -1, 0);
+				}
 				reloadCount++;
 				SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 			}
 			else
 			{
-				Debug.Log("YOU WIN");
+				MenuManager.instance.setEnd("You Win");
 			}
 		}
 	}

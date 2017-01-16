@@ -89,7 +89,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   acceleration: 10
-  maxSpeed: 5
+  maxSpeed: 3
   deceleration: 0.5
   life: 4
   damage: 1

@@ -118,6 +118,10 @@ public class Player : MonoBehaviour {
     public void Hit(int damage)
     {
         Life = Life - damage;
+		if(Life <= 0)
+		{
+			MenuManager.instance.setEnd("Game Over");
+		}
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

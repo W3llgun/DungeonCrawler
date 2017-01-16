@@ -10,7 +10,7 @@ public class Spawner : MonoBehaviour {
 	public Transform right;
 	public Transform top;
 	public Transform bot;
-	float xMax, xMin, yMax, yMin;
+	public float xMax, xMin, yMax, yMin;
 	public int enemyCountMax = 5;
 	
 	void Awake () {
@@ -44,6 +44,7 @@ public class Spawner : MonoBehaviour {
 	void spawnOne(Vector3 pos)
 	{
 		int indexToSpawn = Random.Range(0, prefabsEnemy.Length);
-		Instantiate(prefabsEnemy[indexToSpawn], enemyHolder.transform);
+		GameObject go = (GameObject)Instantiate(prefabsEnemy[indexToSpawn], enemyHolder.transform);
+		go.transform.position = pos;
 	}
 }

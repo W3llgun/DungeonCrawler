@@ -26,7 +26,11 @@ public class Projectile : Moveable
 	{
 		if(collision.CompareTag(targetTag))
 		{
-			Debug.Log("Damage Player");
+			collision.GetComponent<Player>().Hit(damage);
+			Destroy(this.gameObject);
+		}
+		else if(collision.CompareTag("Border"))
+		{
 			Destroy(this.gameObject);
 		}
 	}
