@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour {
 	public GameObject[] prefabsEnemy;
+	public GameObject player;
 	GameObject enemyHolder;
 	public Transform left;
 	public Transform right;
@@ -13,6 +14,10 @@ public class Spawner : MonoBehaviour {
 	public int enemyCountMax = 5;
 	
 	void Awake () {
+		if(GameObject.FindGameObjectWithTag("Player") == null)
+		{
+			Instantiate(player, Vector3.zero, Quaternion.identity);
+		}
 		xMax = right.position.x;
 		xMin = left.position.x;
 		yMax = top.position.y;

@@ -32,6 +32,9 @@ public abstract class Enemy : Moveable {
 		if(life <= 0)
 		{
 			Room.instance.unregister(this);
+			if(Random.Range(0,100) > 70)
+			BonusSpawner.instance.Spawn(transform.position, 1);
+
 			Destroy(this.gameObject);
 		}
 	}

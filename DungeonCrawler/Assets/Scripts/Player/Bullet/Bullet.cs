@@ -9,17 +9,18 @@ public class Bullet : MonoBehaviour {
     [HideInInspector]
     public Vector3 direction = Vector3.zero;
 
+    [HideInInspector]
+    public int damage;
+
     public float speed;
     public float maxSpeed;
-
-    // Use this for initialization
+    
     void Start ()
     {
         rigid = GetComponent<Rigidbody2D>();
 	}
 	
-	// Update is called once per frame
-	void Update ()
+	void FixedUpdate ()
     {
         rigid.AddForce(direction * speed);
         rigid.velocity = Vector2.ClampMagnitude(rigid.velocity, maxSpeed);
@@ -41,9 +42,10 @@ public class Bullet : MonoBehaviour {
     {
         if (collision.gameObject.CompareTag("Enemy"))
         {
+            collision.gameObject.GetComponent<Enemy>().takeDamage(damage);
             Delete();
         }
-        else if (collision.gameObject.CompareTag("Borders"))
+        else if (collision.gameObject.CompareTag("Border"))
         {
             Delete();
         }

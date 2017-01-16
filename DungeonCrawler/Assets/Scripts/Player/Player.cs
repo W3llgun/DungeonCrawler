@@ -40,6 +40,8 @@ public class Player : MonoBehaviour {
     public int maxSpeed = 15;
     public int speed = 5;
 
+    public int damage = 1;
+
     public float fireRate = 0.5f;
 
     public Controls move = new Controls(KeyCode.Z, KeyCode.Q, KeyCode.S, KeyCode.D);
@@ -106,10 +108,16 @@ public class Player : MonoBehaviour {
 
         GameObject go = Instantiate(bullet, transform.position + Vector3.Scale(vec, coll.bounds.extents), bullet.transform.rotation) as GameObject;
         go.GetComponent<Bullet>().direction = vec;
+        go.GetComponent<Bullet>().damage = damage;
 
         yield return new WaitForSeconds(fireRate);
 
         shootCor = null;
+    }
+
+    public void Hit(int damage)
+    {
+        Life = Life - damage;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -117,11 +125,11 @@ public class Player : MonoBehaviour {
         if (collision.gameObject.CompareTag("Item"))
         {
             Pickup collect = collision.gameObject.GetComponent<Item>().Collect();
-            if (collect.type == "Life")
+            if (collect.type == ItemType.LIFE)
             {
                 Life = Life + collect.value;
             }
-            else if(collect.type == "Score")
+            else if(collect.type == ItemType.SCORE)
             {
                  //AddScore
             }
