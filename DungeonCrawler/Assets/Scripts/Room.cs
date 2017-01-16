@@ -3,61 +3,68 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Room : MonoBehaviour {
+	public static Room instance;
 	public List<Door> doors;
 	public List<Enemy> enemysInRoom;
 	public bool isPlayerIn = false;
+	bool doorOpen = false;
 
 	void Awake () {
-		enemysInRoom = new List<Enemy>();
+		instance = this;
 		doors = new List<Door>(GetComponentsInChildren<Door>());
-	}
-
-	private void OnTriggerEnter2D(Collider2D collision)
-	{
-		Debug.Log("azdadazd");
-		if (collision.CompareTag("Player"))
+		foreach (var door in doors)
 		{
-			isPlayerIn = true;
-			switchEnemysState(true);
+			door.gameObject.SetActive(false);
+		}
+
+		InvokeRepeating("checkDoor", 0.2f, 1);
+	}
+	
+	public void register(Enemy en)
+	{
+		if(!enemysInRoom.Contains(en))
+		{
+			enemysInRoom.Add(en);
 		}
 	}
 
-	private void OnTriggerExit2D(Collider2D collision)
+	public void unregister(Enemy en)
 	{
-		if (collision.CompareTag("Player"))
+		if (enemysInRoom.Contains(en))
 		{
-			isPlayerIn = false;
-			switchEnemysState(false);
+			enemysInRoom.Remove(en);
+			checkDoor();
 		}
 	}
 
-	private void OnTriggerStay2D(Collider2D collision)
+	void checkDoor()
 	{
-		if (isPlayerIn) return;
-
-		if(collision.CompareTag("Enemy"))
+		if (enemysInRoom.Count == 0 && !doorOpen)
 		{
-			Enemy en = collision.gameObject.GetComponent<Enemy>();
-			if(en && !enemysInRoom.Contains(en))
+			openRandomDoor();
+			//foreach (var door in doors)
+			//{
+			//	door.gameObject.SetActive(true);
+			//}
+		}
+	}
+
+	void openRandomDoor()
+	{
+		int openedCount = 0;
+		foreach (var door in doors)
+		{
+			int rnd = Random.Range(1, 100);
+			if(rnd > 50)
 			{
-				enemysInRoom.Add(en);
-				en.gameObject.SetActive(false);
+				openedCount++;
+				door.gameObject.SetActive(true);
 			}
 		}
-	}
-
-	void switchEnemysState(bool value)
-	{
-		foreach (var en in enemysInRoom)
+		if(openedCount == 0)
 		{
-			if(en)
-			en.gameObject.SetActive(value);
+			doors[Random.Range(0, doors.Count)].gameObject.SetActive(true);
 		}
-	}
-
-
-	// Update is called once per frame
-	void Update () {
-		//if(isPlayerIn && )
+		doorOpen = true;
 	}
 }

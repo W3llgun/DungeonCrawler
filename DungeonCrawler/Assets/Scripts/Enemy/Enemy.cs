@@ -12,7 +12,7 @@ public abstract class Enemy : Moveable {
 	
 
 	protected virtual void Start () {
-		
+		Room.instance.register(this);
 	}
 	
 	protected virtual void Update()
@@ -31,6 +31,7 @@ public abstract class Enemy : Moveable {
 		life -= dmg;
 		if(life <= 0)
 		{
+			Room.instance.unregister(this);
 			Destroy(this.gameObject);
 		}
 	}
