@@ -47,6 +47,7 @@ public class Bullet : MonoBehaviour {
         }
         else if (collision.gameObject.CompareTag("Border"))
         {
+			Debug.Log("Border");
             Delete();
         }
     }
